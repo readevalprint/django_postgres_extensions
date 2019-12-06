@@ -1,3 +1,5 @@
+import six
+
 from django_postgres_extensions.models.fields import ArrayField
 from django.db.models.fields.related import RelatedField
 from django.db.models.query_utils import PathInfo
@@ -6,7 +8,6 @@ from .related_descriptors import MultiReferenceDescriptor
 from django.db import models
 from django.db.models.fields.related import RECURSIVE_RELATIONSHIP_CONSTANT, lazy_related_operation
 from django.forms.models import ModelMultipleChoiceField
-from django.utils import six
 from django.utils.encoding import force_text
 from .related_lookups import RelatedArrayContains, RelatedArrayExact, RelatedArrayContainedBy, RelatedContainsItem, \
     RelatedArrayOverlap, RelatedAnyGreaterThan, RelatedAnyLessThanOrEqual, RelatedAnyLessThan, RelatedAnyGreaterThanOrEqual

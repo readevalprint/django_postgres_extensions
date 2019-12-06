@@ -1,5 +1,6 @@
 from __future__ import unicode_literals
 
+import six
 import warnings
 
 from django.contrib.contenttypes.models import ContentType
@@ -8,7 +9,6 @@ from django.db import connection
 from django.db.models import Prefetch
 from django.db.models.query import get_prefetcher
 from django.test import TestCase, override_settings
-from django.utils import six
 from django.utils.encoding import force_text
 from unittest import skip
 
